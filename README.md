@@ -1,4 +1,4 @@
-# Opinionated Microservice Design Guide
+# (Highly) Opinionated (Microservice) Design Guide
 
 Following are the ideas I have gathered while working with microservices at Wise (former Transferwise).
 
