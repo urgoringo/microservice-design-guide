@@ -64,14 +64,14 @@ Avoid NotNull annotations and instead [use explicit Option types](https://medium
 
 Try to come up with clear categories how your team classifies tests. 
 Otherwise, you may end up with all sorts of weird creations that do some "unit test" things and some "integration test" things all at once.
-This means more work when deciding what tests are needed for any new feature but also hard time understanding existing tests.
+Not having clarity means more work when deciding what tests are needed for any new feature but also harder time understanding existing tests.
 
 ### Unit tests
 TDD is good, but it is also very hard. 
 Even when failing to do TDD by the book I have found it valuable to [listen to what the tests are trying to tell me](https://medium.com/transferwise-engineering/5-tips-for-getting-more-out-of-our-tests-5b432ee2ea47).
 If you do that then unit tests can be [great source for pushing our design](https://medium.com/transferwise-engineering/poka-yoke-in-software-design-e6a0d955a4d8).
 
-If better design by tests is not something you want then it might be better to focus on writing more course grained tests. 
+If better design by tests is not something you want then it might be better to focus on writing more coarse-grained tests. 
 In case of Hexagonal architecture [port level tests](https://medium.com/@urgo/more-effective-testing-of-spring-microservices-1ed87d456ae7) are good for driving high level architecture. 
 
 In any case I recommend [not writing tests against configuration](https://medium.com/transferwise-engineering/dont-write-tests-against-configuration-574d2121469c).
