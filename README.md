@@ -99,3 +99,7 @@ It is just much more convenient to write tests through Java API than pushing eve
 To push it even further we can write acceptance tests without any framework dependency. 
 We don't really need Spring for verifying our business logic (at least hopefully we don't). 
 For wiring things together we can just instantiate our Java config objects and get the port instance without Spring.  
+
+### Other resources:
+
+- https://github.com/testdouble/contributing-tests/wiki
