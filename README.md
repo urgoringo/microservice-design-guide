@@ -2,6 +2,10 @@
 
 Following are the ideas I have gathered while working with microservices at Wise (former Transferwise).
 
+## Why not to build microservices
+
+TODO
+
 ## Ideas on the macro design
 
 ### Microservice size
