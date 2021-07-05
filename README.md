@@ -61,6 +61,15 @@ Always avoid any nulls.
 Instead [use NullObject and Optional](https://medium.com/transferwise-engineering/null-object-and-optional-48fc4e74c04c).
 Avoid NotNull annotations and instead [use explicit Option types](https://medium.com/the-innovation/implementing-nullability-in-object-state-1c501231810b).
 
+### Code packages
+One option how to package is following the Hexagonal architecture.
+Top level will have all the feature packages if the service has more than one module.
+I think it is perfectly valid that a microservice contains multiple modules. No need to split the system into powdery pieces as noted in [Microservice size]
+
+Then under each module package we can have all stuff needed for that specific module. 
+Note that this approach also prepares us for possible future split if the team or team cognitive load grows too big.
+
+Good resource for pragmatic Hexagonal architecture: [Getting your hands dirty on Clean Architecture](https://leanpub.com/get-your-hands-dirty-on-clean-architecture).
 
 ## Testing
 
