@@ -93,3 +93,9 @@ In any case I recommend [not writing tests against configuration](https://medium
 In [Growing OO Software Guided by Tests](http://www.growing-object-oriented-software.com/) Steve and Nat suggest the idea of starting with a high level acceptance test before getting into new feature implementation. 
 One easy way of knowing when you have enough acceptance tests is when you don't feel like you should do some manual testing before releasing.
 
+One question with acceptance tests is the level at which these should be written. Steve and Nat suggest writing them as e2e as possible. 
+However, sometimes it can be more effective to write these tests [at your port level](https://www.youtube.com/watch?v=EZ05e7EMOLM&list=WL&index=95) (or whatever is the facade to the domain model).
+It is just much more convenient to write tests through Java API than pushing everything through some kind of HTTP API.
+To push it even further we can write acceptance tests without any framework dependency. 
+We don't really need Spring for verifying our business logic (at least hopefully we don't). 
+For wiring things together we can just instantiate our Java config objects and get the port instance without Spring.  
